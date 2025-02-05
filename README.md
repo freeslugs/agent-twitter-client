@@ -58,7 +58,7 @@ await scraper.login(
 );
 
 const tweets = await scraper.getTweets('elonmusk', 10);
-const tweetsAndReplies = scraper.getTweetsAndReplies('elonmusk');
+const tweetsAndReplies = await scraper.getTweetsAndReplies('elonmusk');
 const latestTweet = await scraper.getLatestTweet('elonmusk');
 const tweet = await scraper.getTweet('1234567890123456789');
 await scraper.sendTweet('Hello world!');
